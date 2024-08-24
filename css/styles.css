@@ -1,5 +1,6 @@
 :root {
   --Titulo: 1.7vw;
+  --Titulo2: 2.3vw;
   --Subtitulo: 1.9vw;
   --Parrafo: 1.4vw;
   --padingSecciones: 4vw;
@@ -11,6 +12,11 @@ body {
   margin: 0;
   width: 100%;
   font-family: monospace;
+  background-color: var(--colorFondo);
+}
+
+.titulo {
+  font-size: var(--Titulo);
 }
 
 .subtitulo {
@@ -18,16 +24,26 @@ body {
   font-size: var(--Subtitulo);
 }
 
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #5f1b1b;
+}
+
 .parrafo {
   font-family: sans-serif;
   font-size: var(--Parrafo);
 }
 
+.yo {
+  width: 14vw;
+  border-radius: 60px;
+}
+
 .bannerInicio {
   display: flex;
   flex-direction: column;
-  height: 40vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/media/banner.jpg);
+  height: 25vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,6 +52,8 @@ body {
   color: var(--colorLetras);
   font-family: monospace;
   font-size: var(--Titulo);
+  align-items: center;
+  padding-top: 40px;
 }
 .tituloInicio {
   margin-bottom: 0px;
@@ -48,7 +66,7 @@ body {
   border: none;
 }
 .descripcionGeneral {
-  height: 25vh;
+  height: 19vw;
   background-color: var(--colorFondo);
   color: var(--colorLetras);
   font-family: monospace;
@@ -58,22 +76,33 @@ body {
 #tituloDescripcion {
   margin: 0px 0px 0px 0px;
 }
+
+.contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .listaContacto {
   display: flex;
   list-style: none;
   justify-content: center;
+  padding: 0px 0px 0px 0px;
 }
 
 .listaContacto li a {
   display: inline-block;
-  border-radius: 30%;
+  border-radius: 20px;
   padding: 3px;
   border: 0.5px solid transparent;
   transition: background-color 0.3s ease, border 0.3s ease;
+  width: 2.5vw;
+  height: 2.5vw;
 }
 
 .icono {
   width: 1.9vw;
+  height: 1.9vw;
   padding: 5px;
 }
 
@@ -86,6 +115,43 @@ body {
   border: 0.5px solid rgba(128, 128, 128, 0.45);
   border-radius: 30%;
   transition: background-color 0.3s ease;
+}
+
+.habilidadesTecnicas {
+  background-color: var(--colorFondo);
+  color: var(--colorLetras);
+  padding: var(--padingSecciones);
+  height: 10vh;
+}
+
+.habilidadesTecnicas .subtitulo {
+  margin: 0px 0px 0px 0px;
+}
+
+.habilidades ul {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  justify-content: space-between;
+  margin: 20px 30px 0px 30px;
+}
+
+.habilidades ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2vw;
+}
+
+.iconoHabilidades {
+  width: 3.5vw;
+  border-radius: 5px;
+}
+
+.habilidades ul li:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .educacion {
@@ -105,5 +171,64 @@ body {
 }
 
 .fecha {
-  width: 12%;
+  font-size: 1.1vw;
+  width: 12vw;
+}
+
+.experienciaLaboral {
+  background-color: var(--colorFondo);
+  color: var(--colorLetras);
+  padding: var(--padingSecciones);
+}
+.divExperiencia h2 {
+  font-size: 1.7vw;
+  padding-left: 3vw;
+}
+
+.divExperiencia ul {
+  padding: 0px 0px 0px 7vw;
+}
+
+.divCapacitacion ul {
+  padding: 0px 0px 0px 7vw;
+}
+
+.capacitacion {
+  padding: var(--padingSecciones);
+  background-color: var(--colorFondo);
+  color: var(--colorLetras);
+}
+
+.ulCapacitacion {
+  padding: 0px 0px 0px 7vw;
+  text-decoration: none;
+}
+
+.descarga {
+  text-decoration: none;
+  background-color: #5f1b1b;
+  color: var(--colorLetras);
+  padding: 1vw;
+  border-radius: 20px;
+  font-size: 1vw;
+}
+
+/* Estilo base para los cuadros emergentes */
+.popup {
+  font-size: 1.3vw;
+  display: hidden;
+}
+
+/* Mostrar el cuadro cuando se active */
+.popup.active {
+  display: block;
+}
+
+/* Ocultar cuando no se necesita */
+.hidden {
+  display: none;
+}
+
+.textCapacitacion {
+  text-decoration: none;
 }

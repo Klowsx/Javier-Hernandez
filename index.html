@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javier Hernandez</title>
-    <link rel="stylesheet" href="C:\Users\javie\Documents\Proyectos\Chancleta\css\styles.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="contPrincipal">
         <div class="bannerInicio">
+            <img src="media/yo.jpg" class="yo" alt="">
             <h1 class="tituloInicio">Javier Hernandez</h1>
             <h3 class="subtituloInicio">Desarrollador de software</h3>
         </div>
@@ -22,7 +22,7 @@
 
 
         <div class="descripcionGeneral">
-            <h2 class="subtitulo" id="tituloDescripcion">Sobre mi</h2>
+            <h2 class="subtitulo underline" id="tituloDescripcion">Sobre mi</h2>
             <p class="parrafo descripcion">Apasionado por la tecnología con experiencia en desarrollo de aplicaciones
                 web utilizando Angular, HTML, CSS y
                 JavaScript. Poseo un enfoque orientado a resolver problemas complejos con soluciones eficientes y
@@ -31,24 +31,47 @@
             </p>
             <div class="contactos">
                 <ul class="listaContacto">
-                    <li><a href="#"><img src="/media/github.png" class="icono" alt=""></a></li>
-                    <li><a href="#"><img src="/media/linkedin.png" class="icono" alt=""></a></li>
-                    <li><a href="#"><img src="/media/mail.png" class="icono" alt=""></a></li>
-                    <li><a href="#"><img src="/media/phone.png" class="icono" alt=""></a></li>
+                    <li><a href="https://github.com/Klowsx" target="_blank"><img src="media/github.png" class="icono"
+                                alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/javier-hernández-88055923a/" target="_blank"><img
+                                src="media/linkedin.png" class="icono" alt=""></a></li>
+                    <li><a href="#" id="mail-icon"><img src="media/mail.png" class="icono" alt=""></a></li>
+                    <li><a href="#" id="phone-icon"><img src="media/phone.png" class="icono" alt=""></a></li>
+
+
                 </ul>
+                <div id="mail-popup" class="popup hidden">
+                    <p>Correo: javierh3r@gmail.com</p>
+                </div>
+                <div id="phone-popup" class="popup hidden">
+                    <p>Teléfono: +507 6630-9918</p>
+                </div>
+                <a href="media/Javier Hernández CV.pdf" class="descarga" download="Javier Hernández CV">Descargar
+                    CV</a>
             </div>
         </div>
         <div class="habilidadesTecnicas">
-            <h2 class="subtitulo">Habilidades técnicas</h2>
-            <p class="parrafo"></p>
+            <h2 class="subtitulo underline">Habilidades técnicas</h2>
+            <div class="habilidades">
+                <ul>
+                    <li><img src="media/java.png" alt="" class="iconoHabilidades">Java</li>
+                    <li><img src="media/kotlin.png" alt="" class="iconoHabilidades">Kotlin</li>
+                    <li><img src="media/python.png" alt="" class="iconoHabilidades">Python</li>
+                    <li><img src="media/html.png" alt="" class="iconoHabilidades">HTML</li>
+                    <li><img src="media/css.png" alt="" class="iconoHabilidades">CSS</li>
+                    <li><img src="media/js.png" alt="" class="iconoHabilidades">JavaScript</li>
+                    <li><img src="media/angular.png" alt="" class="iconoHabilidades">Angular</li>
+
+                </ul>
+            </div>
         </div>
         <div class="educacion">
-            <h2 class="subtitulo">Educación</h2>
+            <h2 class="subtitulo underline">Educación</h2>
             <div class="divEducacion universidad">
                 <h3 class="fecha">2022 - Actualmente</h3>
                 <div>
-                    <h2>Lic. desarrollo de Software</h2>
-                    <h3 class="titulo nombreU">Universidad Tecnologica de Panamá</h3>
+                    <h2 class="titulo">Lic. desarrollo de Software</h2>
+                    <h3 class="subtitulo">Universidad Tecnologica de Panamá</h3>
                 </div>
 
             </div>
@@ -56,22 +79,52 @@
             <div class="divEducacion secundaria">
                 <h3 class="fecha">2019 - 2021</h3>
                 <div>
-                    <h2>Bachiller en Tecnologia Informatica</h2>
-                    <h3 class="titulo">IPT Jeptha B. Duncan</h3>
+                    <h2 class="titulo">Bachiller en Tecnologia Informatica</h2>
+                    <h3 class="subtitulo">IPT Jeptha B. Duncan</h3>
                 </div>
 
             </div>
         </div>
 
         <div class="experienciaLaboral">
-            <h2 class="subtitulo">Experiencia laboral</h2>
+            <h2 class="subtitulo underline">Experiencia laboral</h2>
+            <div class="divExperiencia">
+                <h2 class="subtitulo">Proyectos Personales</h2>
+                <ul class="parrafo">
+                    <li>Desarrollo de aplicaciones web utilizando Angular, HTML, CSS y JavaScript, enfocándome en
+                        interfaces responsivas y
+                        amigables para el usuario.</li>
+                    <li>Implementación de técnicas de adaptación de contenido para asegurar la correcta
+                        visualización en dispositivos móviles y
+                        de escritorio.</li>
+                </ul>
+            </div>
             <p class="parrafo"></p>
         </div>
 
-        <div>
-            <a href="#">Descargar CV</a>
+        <div class="capacitacion ">
+            <h2 class="subtitulo underline">Capacitación</h2>
+            <div class="divEducacion">
+                <h3 class="fecha">Samsung, 2024</h3>
+                <div class="textCapacitacion">
+                    <h3 class="subtitulo">Samsung Innovation Campus - Inteligencia Artificial </h3>
+                    <ul class="parrafo ulCapacitacion">
+                        <li>Formación intensiva en inteligencia artificial, abarcando temas como machine learning, redes
+                            neuronales, y análisis de
+                            datos.</li>
+                        <li>Desarrollo de proyectos prácticos aplicando técnicas de IA para resolver problemas reales.
+                        </li>
+                        <li>Adquisición de habilidades en el diseño y desarrollo de aplicaciones inteligentes,
+                            combinando
+                            teoría y práctica con
+                            enfoque en la innovación tecnológica.</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </div>
+    <script src="js/funciones.js"></script>
 </body>
 
 </html>
